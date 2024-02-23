@@ -7,14 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="maze" class="maze-grid">
-        <!-- Example cell structure, repeat for full grid -->
-        <div class="cell pathway" data-x="0" data-y="0"></div>
-        <div class="cell wall" data-x="1" data-y="0"></div>
-        <!-- Placeholders for interactive elements -->
-        <div class="cell interactive mirror" data-x="2" data-y="0"></div>
-        <div class="cell interactive lens" data-x="3" data-y="0"></div>
-    </div>
+   <div id="maze" class="maze-grid">
+    <!-- Row 1 -->
+    <div class="cell wall"></div>
+    <div class="cell pathway"></div>
+    <div class="cell wall"></div>
+    <div class="cell wall"></div>
+    <div class="cell wall"></div>
+
+    <!-- Row 2 -->
+    <div class="cell wall"></div>
+    <div class="cell pathway"></div>
+    <div class="cell pathway"></div>
+    <div class="cell pathway"></div>
+    <div class="cell wall"></div>
+
+    <!-- Row 3 -->
+    <div class="cell wall"></div>
+    <div class="cell pathway"></div>
+    <div class="cell wall"></div>
+    <div class="cell pathway"></div>
+    <div class="cell wall"></div>
+
+    <!-- Row 4 -->
+    <div class="cell wall"></div>
+    <div class="cell pathway"></div>
+    <div class="cell pathway"></div>
+    <div class="cell pathway interactive lens"></div>
+    <div class="cell wall"></div>
+
+    <!-- Row 5 -->
+    <div class="cell wall"></div>
+    <div class="cell wall"></div>
+    <div class="cell wall"></div>
+    <div class="cell pathway interactive mirror"></div>
+    <div class="cell wall"></div>
+</div>
 
     <script src="script.js"></script>
 </body>
