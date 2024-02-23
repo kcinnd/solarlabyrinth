@@ -1,17 +1,16 @@
 .maze-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* Adjust based on grid size */
-    gap: 2px;
-    background-color: #4C9A2A; /* Eco-green color */
-    padding: 10px; /* Add some padding around the maze for better aesthetics */
+    grid-template-columns: repeat(5, 50px); /* 5 columns, adjust the number for a larger maze */
+    grid-template-rows: repeat(5, 50px); /* 5 rows, adjust the number for a larger maze */
+    gap: 2px; /* Space between cells */
 }
 
 .cell {
-    width: 50px; /* Adjust based on preference */
-    height: 50px; /* Adjust based on preference */
+    width: 50px;
+    height: 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .pathway {
@@ -22,18 +21,12 @@
     background-color: #999; /* Distinguishable walls */
 }
 
-.interactive.mirror, .interactive.lens {
-    cursor: pointer;
-}
-
-.mirror {
+.interactive.mirror {
     background-image: url('https://i.imgur.com/Zfjw2I4.png');
-    background-size: cover; /* Ensure the image covers the whole element */
-    background-position: center; /* Center the background image */
+    background-size: cover;
 }
 
-.lens {
+.interactive.lens {
     background-image: url('https://i.imgur.com/rjXBpDC.png');
-    background-size: cover; /* Ensure the image covers the whole element */
-    background-position: center; /* Center the background image */
+    background-size: cover;
 }
