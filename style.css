@@ -1,8 +1,10 @@
 .maze-grid {
     display: grid;
-    grid-template-columns: repeat(5, 50px); /* 5 columns, adjust the number for a larger maze */
-    grid-template-rows: repeat(5, 50px); /* 5 rows, adjust the number for a larger maze */
+    grid-template-columns: repeat(5, 50px); /* Adjust based on the number of columns in your maze */
+    grid-template-rows: repeat(5, 50px); /* Adjust based on the number of rows in your maze */
     gap: 2px; /* Space between cells */
+    background-color: #4C9A2A; /* Eco-green background color */
+    padding: 10px; /* Optional: adds some padding around the maze */
 }
 
 .cell {
@@ -29,4 +31,13 @@
 .interactive.lens {
     background-image: url('https://i.imgur.com/rjXBpDC.png');
     background-size: cover;
+}
+
+/* Additional styles for hover effects and dragging visuals */
+.interactive:hover {
+    opacity: 0.8;
+}
+
+.dragging {
+    opacity: 0.6; /* Visual feedback for dragging an element */
 }
