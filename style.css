@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr); /* Adjust based on grid size */
     gap: 2px;
+    background-color: #4C9A2A; /* Eco-green color */
+    padding: 10px; /* Add some padding around the maze for better aesthetics */
 }
 
 .cell {
