@@ -27,9 +27,13 @@
 }
 
 .mirror {
-    background-image: url('mirror.png'); /* Placeholder for mirror image */
+    background-image: url('https://i.imgur.com/Zfjw2I4.png');
+    background-size: cover; /* Ensure the image covers the whole element */
+    background-position: center; /* Center the background image */
 }
 
 .lens {
-    background-image: url('lens.png'); /* Placeholder for lens image */
+    background-image: url('https://i.imgur.com/rjXBpDC.png');
+    background-size: cover; /* Ensure the image covers the whole element */
+    background-position: center; /* Center the background image */
 }
