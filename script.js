@@ -58,8 +58,8 @@ function stopDragLens() {
 function snapLensToGrid(lens) {
     const gridCellSize = 50; // Adjust based on your grid cell size
     const rect = lens.getBoundingClientRect();
-    const gridX = Math.round(rect.left / gridCellSize) * gridCellSize;
-    const gridY = Math.round(rect.top / gridCellSize) * gridCellSize;
-    lens.style.left = `${gridX}px`;
-    lens.style.top = `${gridY}px`;
+    const gridX = Math.round((rect.left - maze.offsetLeft) / gridCellSize) * gridCellSize;
+    const gridY = Math.round((rect.top - maze.offsetTop) / gridCellSize) * gridCellSize;
+    lens.style.left = `${gridX + maze.offsetLeft}px`;
+    lens.style.top = `${gridY + maze.offsetTop}px`;
 }
