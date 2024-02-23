@@ -1,0 +1,33 @@
+.maze-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Adjust based on grid size */
+    gap: 2px;
+}
+
+.cell {
+    width: 50px; /* Adjust based on preference */
+    height: 50px; /* Adjust based on preference */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pathway {
+    background-color: #333; /* Dark pathways */
+}
+
+.wall {
+    background-color: #999; /* Distinguishable walls */
+}
+
+.interactive.mirror, .interactive.lens {
+    cursor: pointer;
+}
+
+.mirror {
+    background-image: url('mirror.png'); /* Placeholder for mirror image */
+}
+
+.lens {
+    background-image: url('lens.png'); /* Placeholder for lens image */
+}
